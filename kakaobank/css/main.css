@@ -1,0 +1,236 @@
+/* 폰트적용 */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;300&display=swap');
+
+
+html > body {
+  font-family: 'Gothic A1', sans-serif;
+}
+
+/* 노말라이즈 */
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.body {
+  width: 100%;
+  height: 100%;
+}
+/* 라이브러리 */
+
+/* 상단 메뉴바 작업*/
+
+:root {
+  --menu-height: 60px;
+  --con1-height: 160px;
+}
+
+header {
+  width: 100%;
+  height: var(--menu-height);
+  border-bottom: solid 1.4px rgb(231, 231, 227);
+}
+.top-bar {
+  height: var(--menu-height);
+  width: 100%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-grow {
+  flex-grow: 0.12;
+}
+
+.logo-img {
+  object-fit: cover;
+  width: 80%;
+  height: 40%;
+  margin: auto;
+}
+
+.menu-ul {
+  width: 30%;
+}
+
+.menu-ul > ul {
+  display: flex;
+  justify-content: center;
+}
+.menu-ul > ul > li > a {
+  font-size: 0.7rem;
+  padding: 11px 16px;
+}
+.menu-ul > ul > li:hover > a {
+  text-decoration: underline;
+}
+
+.logo-img > img {
+  max-width: 100%;
+  height: auto;
+}
+
+.menu-ul > ul > li:nth-child(6) > a {
+  margin-left: 14px;
+  background-color: rgb(253, 233, 51);
+  border-radius: 40px;
+}
+
+/* 상단 메뉴바 작업 끝*/
+
+/* 콘텐트 1 */
+.content-1-con {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 521px;
+}
+
+.logo-img {
+  object-fit: cover;
+  width: 80%;
+  height: 40%;
+  margin: auto;
+}
+
+.content-1-con {
+  display: flex;
+  height: 530px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(252, 238, 118);
+  position: relative;
+  
+  
+}
+
+.con1-box {
+  display: flex;
+  flex-direction: column;
+  width: 46%;
+  height: 640px;
+  margin: auto;
+}
+
+.con1-box > img {
+  max-width: 100%;
+  height: auto;
+}
+
+.con1-txt{
+  position: absolute;
+  
+  left:37%;
+    top:54%;
+    margin-left:-150px;
+    margin-top:-150px;
+   
+  
+}
+
+.con1-txt>span{
+  font-size: 2.3em;
+  font-weight: 900;
+}
+
+.con1-txt>p:nth-child(2){
+  padding: 8px 3px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.con1-txt>p:nth-child(3){
+  padding: 8px 3px;
+  font-size: 0.8rem;
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+
+.con1-txt>ul{
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.con1-txt>ul>li{
+  background-color: white;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 0.8rem;
+
+}
+
+.con1-txt>ul>li:nth-child(1){
+  background-image: url("../imgs/google-play\ \(1\).png");
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  background-position: 16% 46%;
+
+  
+
+}
+.con1-txt>ul>li:nth-child(2){
+  background-image: url("../imgs/apple.png");
+  background-repeat: no-repeat;
+  background-size: 17px 17px;
+  background-position: 19% 46%;
+
+  
+
+}
+.con1-txt>ul>li:nth-child(1)>a{
+  padding-left: 44px;
+  padding-right: 22px;
+  padding-top: 18px;
+  padding-bottom: 15px;
+}
+
+.con1-txt>ul>li:nth-child(2)>a{
+  padding-left: 44px;
+  padding-right: 22px;
+  padding-top: 18px;
+  padding-bottom: 15px;
+}
+
+
+
+.con1-txt>ul>li>a{
+  display: block;
+  
+}
+
+
+
+
+@media (max-width: 1660px) {
+  .content-1-con {
+    width: 1660px;
+  }
+  .top-bar {
+    width: 1700px;
+  }
+}
+
+/* 콘텐트 1 끝*/
+
+/* 콘텐트 2 */
+
+/* 콘텐트 2 끝*/
+
+/* 콘텐트 3 */
+
+/* 콘텐트 3 끝*/
