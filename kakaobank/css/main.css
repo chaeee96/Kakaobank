@@ -1,11 +1,10 @@
 /* 폰트적용 */
-
-
-@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;300&display=swap');
-
-
+/* 
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;300;600&display=swap'); */
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gothic+A1:wght@200;300;600&family=IBM+Plex+Sans+KR:wght@500&display=swap");
 html > body {
-  font-family: 'Gothic A1', sans-serif;
+  font-family: "IBM Plex Sans KR", sans-serif;
 }
 
 /* 노말라이즈 */
@@ -70,7 +69,8 @@ header {
 }
 .menu-ul > ul > li > a {
   font-size: 0.7rem;
-  padding: 11px 16px;
+  font-weight: bold;
+  padding: 11px 13px;
 }
 .menu-ul > ul > li:hover > a {
   text-decoration: underline;
@@ -106,15 +106,13 @@ header {
 
 .content-1-con {
   display: flex;
-  height: 530px;
+  height: 525px;
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
   align-items: center;
   background-color: rgb(252, 238, 118);
   position: relative;
-  
-  
 }
 
 .con1-box {
@@ -130,91 +128,83 @@ header {
   height: auto;
 }
 
-.con1-txt{
+.con1-txt {
   position: absolute;
-  
-  left:37%;
-    top:54%;
-    margin-left:-150px;
-    margin-top:-150px;
-   
-  
+
+  left: 37%;
+  top: 54%;
+  margin-left: -150px;
+  margin-top: -150px;
 }
 
-.con1-txt>span{
+.con1-txt > span {
   font-size: 2.3em;
-  font-weight: 900;
+  font-weight: 700;
 }
 
-.con1-txt>p:nth-child(2){
-  padding: 8px 3px;
-  font-size: 0.8rem;
+.con1-txt > p:nth-child(2) {
+  padding: 8px 6px;
+  font-size: 0.75rem;
   font-weight: 500;
 }
 
-.con1-txt>p:nth-child(3){
+.con1-txt > p:nth-child(3) {
   padding: 8px 3px;
   font-size: 0.8rem;
   font-weight: 900;
   text-decoration: underline;
 }
 
-
-.con1-txt>ul{
+.con1-txt > ul {
   margin-top: 35px;
   display: flex;
   justify-content: space-between;
 }
 
-.con1-txt>ul>li{
+.con1-txt > ul > li {
   background-color: white;
   border-radius: 10px;
   font-weight: bold;
   font-size: 0.8rem;
-
 }
 
-.con1-txt>ul>li:nth-child(1){
+.con1-txt > ul > li:nth-child(1) {
   background-image: url("../imgs/google-play\ \(1\).png");
   background-repeat: no-repeat;
   background-size: 15px 15px;
   background-position: 16% 46%;
-
-  
-
 }
-.con1-txt>ul>li:nth-child(2){
+.con1-txt > ul > li:nth-child(2) {
   background-image: url("../imgs/apple.png");
   background-repeat: no-repeat;
   background-size: 17px 17px;
   background-position: 19% 46%;
-
-  
-
 }
-.con1-txt>ul>li:nth-child(1)>a{
+.con1-txt > ul > li:nth-child(1) > a {
   padding-left: 44px;
   padding-right: 22px;
-  padding-top: 18px;
+  padding-top: 13px;
   padding-bottom: 15px;
 }
 
-.con1-txt>ul>li:nth-child(2)>a{
+.con1-txt > ul > li:nth-child(1):hover > a {
+  text-decoration: underline;
+}
+
+.con1-txt > ul > li:nth-child(2) > a {
   padding-left: 44px;
   padding-right: 22px;
-  padding-top: 18px;
+  padding-top: 14px;
   padding-bottom: 15px;
 }
 
+.con1-txt > ul > li:nth-child(2):hover > a {
+  text-decoration: underline;
+}
 
-
-.con1-txt>ul>li>a{
+.con1-txt > ul > li > a {
   display: block;
-  
 }
-
-
-
 
 @media (max-width: 1660px) {
   .content-1-con {
@@ -228,9 +218,275 @@ header {
 /* 콘텐트 1 끝*/
 
 /* 콘텐트 2 */
+.content-2-con {
+  display: flex;
+  margin-top: 120px;
+  padding-bottom: 25px;
+  border-bottom: solid rgb(250, 247, 247) 20px;
+}
+
+.con2-box {
+  display: flex;
+  flex-direction: row;
+  width: 750px;
+  height: 500px;
+  margin: auto;
+  position: relative;
+}
+.con2-box > img {
+  max-width: 100%;
+  height: auto;
+}
+
+.con2-txt {
+  position: absolute;
+  left: 75%;
+  top: 54%;
+  margin-left: -150px;
+  margin-top: -120px;
+}
+.con2-txt > span {
+  font-size: 1.8rem;
+  font-weight: 1000;
+}
+.con2-txt > p {
+  font-size: 0.7rem;
+
+  padding: 12px;
+  margin-left: -7px;
+}
+
+.con2-txt p:nth-child(3) {
+  font-size: 0.8rem;
+  font-weight: bold;
+  background-color: rgb(250, 247, 247);
+  margin-left: -0px;
+  width: 160px;
+  height: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.con2-txt p:nth-child(3):hover a {
+  text-decoration: underline;
+}
 
 /* 콘텐트 2 끝*/
 
 /* 콘텐트 3 */
+.content-3-con {
+  display: flex;
+  border-bottom: solid rgb(250, 247, 247) 20px;
+}
+.con3-box {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 800px;
+  height: 570px;
+  margin: auto;
+  position: relative;
+}
+.con3-box > img {
+  max-width: 100%;
+  height: auto;
+}
+
+.con3-txt {
+  left: 50px;
+  height: 100%;
+  margin-top: 120px;
+  position: absolute;
+}
+
+.con3-txt > span {
+  font-size: 1.8rem;
+  font-weight: 1000;
+}
+
+.con3-txt > p {
+  font-size: 0.7rem;
+
+  padding: 12px;
+  margin-left: -10px;
+}
+
+.con3-txt > ul {
+  display: flex;
+  width: 235px;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.con3-txt > ul li > a {
+  font-size: 0.7rem;
+  font-weight: bold;
+  background-color: rgb(250, 247, 247);
+  padding: 14px 35px;
+  border-radius: 5px;
+}
+
+.con3-txt > ul li:hover > a {
+  text-decoration: underline;
+}
+
+.con3-txt-img-box {
+  display: flex;
+  margin-top: 50px;
+  width: 120px;
+  height: 80px;
+}
 
 /* 콘텐트 3 끝*/
+
+/* 콘텐트 4 시작*/
+
+.content-4-con {
+  margin-top: 60px;
+  padding-bottom: 40px;
+}
+.con4-txt {
+  margin-left: -120px;
+  margin-top: -130px;
+}
+
+.gray-col {
+  color: rgb(94, 93, 93);
+}
+.gray-col2 {
+  color: rgb(59, 58, 58);
+}
+
+/* 콘텐트 4 끝*/
+
+/* 콘텐트 5 시작*/
+
+.con5-box {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 750px;
+  height: 300px;
+  margin: auto;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.con5-box > img {
+  max-width: 100%;
+  height: auto;
+}
+.con5-txt {
+  left: 50px;
+  height: 100%;
+  margin-top: 50px;
+  position: absolute;
+}
+.con5-txt > p > a {
+  padding: 15px 65px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  background-color: rgb(250, 247, 247);
+  border-radius: 5px;
+}
+
+.con5-txt > p:hover > a {
+  text-decoration: underline;
+}
+
+/* 콘텐트 5 끝*/
+
+/* 콘텐트 6 시작*/
+
+/* 콘텐트 6 끝*/
+
+/* 콘텐트 7 시작*/
+
+/* 콘텐트 7 끝*/
+
+/* 콘텐트 8 시작*/
+
+/* 콘텐트 8 끝*/
+
+/* 콘텐트 9 시작*/
+
+.content-9-con {
+  display: flex;
+  background-color: rgb(248, 247, 247);
+  justify-content: center;
+  padding-top: 110px;
+  padding-bottom: 210px;
+}
+
+.con9-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 800px;
+  height: 500px;
+}
+.con9-box > img {
+  max-width: 100%;
+  height: auto;
+}
+.txt-box-under-line {
+  width: 80px;
+  height: 140px;
+  position: absolute;
+  border-bottom: solid black 1.1px;
+}
+.con9-txt {
+  text-align: center;
+  margin-bottom: 140px;
+}
+
+.con9-txt > span {
+  font-size: 2rem;
+  font-weight: 400;
+  margin: auto;
+}
+
+.img-txt-span-box {
+  margin-top: 40px;
+  display: flex;
+  width: 850px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(58, 58, 58);
+}
+
+.img-txt-span-box span:nth-child(1) {
+  margin-left: 75px;
+  margin-right: 52px;
+}
+.img-txt-span-box span:nth-child(2) {
+  margin-right: 235px;
+}
+
+.img-txt-p-box {
+  font-size: 0.7rem;
+
+  color: rgb(136, 136, 136);
+  display: flex;
+  width: 850px;
+  height: 600px;
+
+  text-align: center;
+}
+
+.img-txt-p-box p:nth-child(1) {
+  padding-left: 65px;
+  padding-right: 50px;
+}
+.img-txt-p-box p:nth-child(2) {
+  padding-left: 8px;
+  padding-right: 50px;
+}
+
+.img-txt-p-box p:nth-child(3) {
+  padding-left: 197px;
+}
+
+/* 콘텐트 9 끝*/
