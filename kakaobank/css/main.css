@@ -68,9 +68,9 @@ header {
   justify-content: center;
 }
 .menu-ul > ul > li > a {
-  font-size: 0.7rem;
-  font-weight: bold;
-  padding: 11px 13px;
+  font-size: 0.73rem;
+
+  padding: 11px 16px;
 }
 .menu-ul > ul > li:hover > a {
   text-decoration: underline;
@@ -106,7 +106,7 @@ header {
 
 .content-1-con {
   display: flex;
-  height: 525px;
+  height: 583px;
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
@@ -444,8 +444,9 @@ header {
 
 .con9-txt > span {
   font-size: 2rem;
-  font-weight: 400;
+  font-weight: 600;
   margin: auto;
+  color: rgb(65, 65, 65);
 }
 
 .img-txt-span-box {
@@ -490,3 +491,105 @@ header {
 }
 
 /* 콘텐트 9 끝*/
+
+/* footer */
+
+footer {
+  background-color: rgb(236, 236, 236);
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ft-span-box {
+  margin-top: 22px;
+  width: 835px;
+  height: 40px;
+  font-size: 0.3rem;
+  color: rgb(124, 124, 124);
+}
+
+.ft-span-box span:nth-child(3),
+span:nth-child(4),
+span:nth-child(5) {
+  color: black;
+  font-weight: bold;
+}
+
+.web-acc-sns-box {
+  display: flex;
+  width: 835px;
+  height: 50px;
+  justify-content: space-between;
+  
+}
+
+.web-acc-box {
+  background-image: url("../imgs/11.png");
+  width: 370px;
+  height: 50px;
+  color: rgb(48, 47, 47);
+  font-size: 0.4rem;
+  padding-left: 49px;
+  background-size: 45px 35px;
+  background-repeat: no-repeat;
+
+  position: relative;
+}
+.web-acc-box span:nth-child(1){
+  flex-grow: 1;
+}
+.web-acc-box span:nth-child(2){
+  top: 10px;
+  left: 54px;
+  position: absolute;
+}
+
+
+
+
+.sns-box {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 200px;
+}
+.sns-box img{
+  padding: 10px 3px;
+  -webkit-filter: opacity(.5) drop-shadow(0 0 0 rgb(102, 101, 101));
+  filter: opacity(.5) drop-shadow(0 0 0 rgb(102, 101, 101));
+
+}
+
+.fb {
+  width: auto;
+  height: auto;
+  max-width: 20px;
+  max-height: 18px;
+ 
+}
+.ins {
+  width: auto;
+  height: auto;
+  max-width: 20px;
+  max-height: 18px;
+ 
+}
+
+.yt {
+  width: auto;
+  height: auto;
+  max-width: 20px;
+  max-height: 18px;
+  
+}
+
+.bl {
+  width: auto;
+  height: auto;
+  max-width: 20px;
+  max-height: 18px;
+  
+}
+/* footer 끝*/
