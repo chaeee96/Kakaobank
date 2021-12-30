@@ -5,7 +5,7 @@
   #### ○ &nbsp; 1차메뉴 &nbsp; ✔️
   #### ○  &nbsp; 2차메뉴  &nbsp;
   #### ○  &nbsp; 콘텐츠 (js X) &nbsp; ✔️
-  #### ○ &nbsp; 콘텐츠 (js O)  &nbsp;
+  #### ○ &nbsp; 콘텐츠 (js O)  &nbsp; ✔️
   #### ○  &nbsp; 푸터  &nbsp;✔️
 
 
