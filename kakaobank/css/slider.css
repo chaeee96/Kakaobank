@@ -1,61 +1,96 @@
- html,
-      body {
-        position: relative;
-        height: 100%;
-      }
+* 폰트적용 */
+/* 
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;300;600&display=swap'); */
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gothic+A1:wght@200;300;600&family=IBM+Plex+Sans+KR:wght@500&display=swap");
+html > body {
+  font-family: "IBM Plex Sans KR", sans-serif;
+}
 
-      body {
-        background: #eee;
-        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-        font-size: 14px;
-        color: #000;
-        margin: 0;
-        padding: 0;
-      }
+/* 노말라이즈 */
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
-      .swiper {
-        width: 900px;
-        height: 400px;
-        background-color:gold;
-        display:flex;
-        justify-items:center;
-      }
-      
-      .swiper-wrapper{
-          display:flex;
-          
-      }
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.body {
+  width: 100%;
+  height: 100%;
+}
+/* 라이브러리 */
 
-      .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
+/* 상단 메뉴바 작업*/
 
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-      }
+:root {
+/*   --menu-height: 80px; */
+  --menu-height:70px;
+  --con1-height: 160px;
+}
 
-      .swiper-slide img {
-        display: block;
-        width: 300px;
-        height: 450px;
-        object-fit: cover;
-        transform:scale(0.9,0.8);
-      }
+header{
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
 
-.swiper-wrapper>div:nth-child(1){
-  
+.menu-con-bar{
+  width: 1050px;
+  height: var(--menu-height);
+  background-color: seagreen;
+  display: flex;
+  align-items: center;
+}
+
+.logo-box{
+  width: 105px;
+  height: 30px;
+  background-color: bisque;
+  display: flex;
+  padding: 10px;
+  margin: 0 15px;
+}
+.logo-box>img{
+  max-width: 100%;
+  height: auto;
   
 }
+.flex-grow{
+  
+  width: 300px;
+  background-color: brown;
+  height: 100%;
+}
+.menu-box{
+  flex-grow: 3;
+  height: 100%;
+  background-color: blueviolet;
+}
+
+.menu-box>ul{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu-box>ul>li{
+  text-align: center;
+}
+
+.menu-box>ul>li>a{
+  background-color: antiquewhite;
+  font-size: 14px;
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding: 14px 18px;
+}
+
+
 

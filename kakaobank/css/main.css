@@ -1,4 +1,4 @@
-/* 폰트적용 */
+* 폰트적용 */
 /* 
 @import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;300&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;300;600&display=swap'); */
@@ -29,67 +29,193 @@ a {
 /* 상단 메뉴바 작업*/
 
 :root {
-  --menu-height: 80px;
+/*   --menu-height: 80px; */
+  --menu-height:80px;
   --con1-height: 160px;
 }
 
-header {
-  width: 100%;
-  height: var(--menu-height);
-  border-bottom: solid 1.4px rgb(231, 231, 227);
+header{
+  width:100%;
+  position: relative;
+  
 }
-.top-bar {
+
+.menu-con-box{
+  width: 1200px;
   height: var(--menu-height);
-  width: 100%;
+  margin: 0 auto;
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: center;
+
+}
+.menu-con-box>div{
+  flex-shrink: 0;
+}
+.logo-box{
+  flex-grow: 0.3;
+ 
+  display: flex;
+  width:30px;
+  height: 60%;
   align-items: center;
-  position: fixed;
-  z-index: 100;
-  background-color: rgb(255, 255, 255);
-}
-
-.flex-grow {
-  flex-grow: 0.12;
-}
-
-.logo-img {
-  object-fit: cover;
-  width: 80%;
-  height: 40%;
-  padding-top: 4px;
+  
   margin: auto;
+  justify-content:center;
+  
 }
 
-.menu-ul {
-  width: 30%;
+.logo-box>img{
+  
+  max-width: 100%;
+  height: auto;
+  
+
 }
 
-.menu-ul > ul {
+.flex-grow{
+  flex-grow: 0.1;
+}
+.flex-grow-2{
+  flex-grow: 0.2;
+
+}
+
+.menu-ul-box{
+  
+  width: 700px;
+  height: 100%;
+  margin: auto;
+  
+}
+
+.menu-ul-box>ul{
+  margin-left: auto;
   display: flex;
+  height: 100%;
+  align-items: center;
   justify-content: center;
 }
-.menu-ul > ul > li > a {
-  font-size: 0.9rem;
+.menu-ul-box>ul>li{
 
-  padding: 11px 23px;
+  
 }
-.menu-ul > ul > li:hover > a {
+.menu-ul-box>ul>li>a{
+  display: block;
+  
+  padding: 13px 24px;
+  font-size: 14px;
+  
+ 
+}
+
+.menu-ul-box>ul>li:nth-child(6)>a{
+  
+  background-color: rgb(255, 217, 112);
+  border-radius: 20px;
+}
+
+
+.menu-ul-box>ul>li>.ul-con-box{
+  background-color:rgb(255, 255, 255);
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 100;
+  left: 0;
+  top:100%;
+  padding: 40px 30px;
+  border-top: solid rgb(233, 231, 231) 2px;
+ 
+}
+.ul-con{
+  
+  margin: 20px 40px;
+  width: 850px;
+  margin: auto;
+  
+}
+
+.ul-con>ul{
+  display: flex;
+  justify-content: space-around;
+  
+}
+.ul-con>ul>li{
+  margin: 10px;
+  
+}
+
+.ul-con ul>li>a{
+ padding: 10px;
+ display: block;
+  
+  text-align: center;
+}
+
+.ul-con>ul>li>a{
+  font-size: 18px;
+  font-weight: 600;
+
+  margin-bottom: 6px;
+  
+}
+
+.ul-con>ul>li>ul>li>a{
+  font-size: 13px;
+
+  
+}
+
+
+.menu-ul-box>ul>li:nth-child(1)>div{
+  display: none;
+}
+
+
+.menu-ul-box>ul>li:nth-child(2)>div{
+display: none;
+}
+
+
+.menu-ul-box>ul>li:nth-child(3)>div{
+  display: none;
+}
+
+.menu-ul-box>ul>li:nth-child(4)>div{
+  display: none;
+}
+
+
+.menu-ul-box>ul>li:hover>div{
+  display: flex;
+}
+
+.menu-ul-box ul>li:hover>a{
   text-decoration: underline;
 }
 
-.logo-img > img {
-  max-width: 100%;
-  height: auto;
+
+
+.menu-ul-box>ul>li:nth-child(2)>.ul-con-box>.ul-con{
+   width: 970px;
+  
+
 }
 
-.menu-ul > ul > li:nth-child(6) > a {
-  margin-left: 14px;
-  background-color: rgb(253, 233, 51);
-  border-radius: 40px;
+.menu-ul-box>ul>li:nth-child(3)>.ul-con-box>.ul-con{
+   width: 950px;
+ 
+
 }
+.menu-ul-box>ul>li:nth-child(4)>.ul-con-box>.ul-con{
+   width: 980px;
+
+}
+
+
+
+
+
+
 
 /* 상단 메뉴바 작업 끝*/
 
@@ -99,13 +225,6 @@ header {
   justify-content: center;
   width: 100%;
   height: 521px;
-}
-
-.logo-img {
-  object-fit: cover;
-  width: 80%;
-  height: 40%;
-  margin: auto;
 }
 
 .content-1-con {
@@ -185,9 +304,9 @@ header {
   background-position: 19% 46%;
 }
 .con1-txt > ul > li:nth-child(1) > a {
-  padding-left: 44px;
-  padding-right: 22px;
-  padding-top: 13px;
+  padding-left: 46px;
+  padding-right: 32px;
+  padding-top: 15px;
   padding-bottom: 15px;
 }
 
@@ -196,9 +315,9 @@ header {
 }
 
 .con1-txt > ul > li:nth-child(2) > a {
-  padding-left: 44px;
-  padding-right: 22px;
-  padding-top: 14px;
+  padding-left: 52px;
+  padding-right: 34px;
+  padding-top: 16px;
   padding-bottom: 15px;
 }
 
@@ -210,12 +329,11 @@ header {
   display: block;
 }
 
+
+
 @media (max-width: 1660px) {
   .content-1-con {
     width: 1660px;
-  }
-  .top-bar {
-    width: 1700px;
   }
 }
 
@@ -250,7 +368,7 @@ header {
   margin-top: -120px;
 }
 .con2-txt > span {
-  font-size: 35px;
+  font-size: 32px;
   font-weight: 1000;
 }
 .con2-txt > p {
@@ -300,12 +418,12 @@ header {
 .con3-txt {
   left: 50px;
   height: 100%;
-  margin-top: 120px;
+  margin-top: 150px;
   position: absolute;
 }
 
 .con3-txt > span {
-  font-size: 35px;
+  font-size: 32px;
   font-weight: 1000;
 }
 
@@ -521,8 +639,8 @@ header {
 }
 
 .moon-star-box > div {
-  top: 17%;
-  left: 75%;
+  top: 18%;
+  left: 79%;
 }
 
 .moon-star-box > span {
@@ -569,6 +687,7 @@ header {
   height: 250px;
 
   z-index: 200;
+  
   top: 15%;
 }
 
@@ -579,7 +698,7 @@ header {
 
 .txt-box > p:nth-child(2) {
   margin-top: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   font-size: 0.9rem;
   font-weight: 200;
   color: rgb(189, 189, 189);
@@ -591,9 +710,9 @@ header {
   justify-content: center;
 }
 .txt-select-box > p {
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 300;
-  margin: 0 3px;
+  margin: 0 4px;
   display: flex;
 }
 .txt-select-box > p > a {
@@ -601,7 +720,7 @@ header {
   width: 135px;
   background-color: rgba(223, 223, 223, 0.2);
   border-radius: 10px;
-  padding: 14px 15px;
+  padding: 16px 17px;
 }
 .txt-select-box > p:hover > a {
   text-decoration: underline;
