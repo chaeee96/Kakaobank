@@ -30,21 +30,30 @@ a {
 
 :root {
 /*   --menu-height: 80px; */
-  --menu-height:80px;
+  --menu-height:78px;
   --con1-height: 160px;
 }
 
 header{
   width:100%;
-  position: relative;
   
 }
+.menu-con{
+  
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 200;
+  background-color: white;
+}
+
 
 .menu-con-box{
-  width: 1200px;
+  width: 930px;
   height: var(--menu-height);
   margin: 0 auto;
   display: flex;
+ 
 
 }
 .menu-con-box>div{
@@ -54,10 +63,10 @@ header{
   flex-grow: 0.3;
  
   display: flex;
-  width:30px;
-  height: 60%;
+  width:120px;
+  height: 100%;
   align-items: center;
-  
+ 
   margin: auto;
   justify-content:center;
   
@@ -66,18 +75,16 @@ header{
 .logo-box>img{
   
   max-width: 100%;
-  height: auto;
+  height:100%;
   
 
 }
 
-.flex-grow{
-  flex-grow: 0.1;
-  
-}
+
+
 .flex-grow-2{
-  flex-grow: 0.2;
-
+  width: 250px;
+ 
 }
 
 .menu-ul-box{
@@ -85,35 +92,69 @@ header{
   width: 700px;
   height: 100%;
   margin: auto;
+ 
   
 }
 
 .menu-ul-box>ul{
-  margin-left: auto;
-  display: flex;
+  
+  display: block;
   height: 100%;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
+  font-size: 0;
+  
+  
 }
+
+
 .menu-ul-box>ul>li{
 
-  height: 100%;
-  display: flex;
+  height: 78px;
+  min-width:70px;
+  display: inline-block;
   align-items: center;
+  box-sizing: border-box;
+  -webkit-transition: border-color .5s;
+  transition: border-color .5s;
+ 
+  text-align: center;
+  vertical-align: middle;
+
+
+ 
 }
+
 .menu-ul-box>ul>li>a{
+  display: block;
+  padding: 11px 18px;
+  font-size: 14px;
+ 
+  position: relative;
+  top: 16px;
+ 
+ 
+}
+
+.menu-ul-box>ul>li:hover{
+
+  border-bottom: solid black 1.5px;
+  z-index: 200;
+  
+ 
+}
+.menu-ul-box>ul>li:nth-child(6){
+ border-bottom: rgb(255, 255, 255);
+}
+
+
+.menu-ul-box>ul>li:nth-child(6)>a{
   display: block;
   text-align: center;
   padding: 13px 20px;
   font-size: 14px;
- 
- 
-}
-
-.menu-ul-box>ul>li:nth-child(6)>a{
-  
   background-color: rgb(255, 217, 112);
   border-radius: 20px;
+ 
 }
 
 
@@ -190,6 +231,7 @@ display: none;
 
 .menu-ul-box>ul>li:hover>div{
   display: flex;
+  z-index: 2000;
 }
 
 .menu-ul-box ul>li:hover>a{
@@ -298,8 +340,9 @@ display: none;
 .con1-txt > ul > li {
   background-color: white;
   border-radius: 15px;
-  font-weight: bold;
-  font-size: 0.8rem;
+  
+  font-size: 0.95rem;
+  font-weight: 600;
   margin: 0 4px
   
 }
@@ -308,19 +351,21 @@ display: none;
   background-image: url("../imgs/google-play\ \(1\).png");
   background-repeat: no-repeat;
   background-size: 15px 15px;
-  background-position: 16% 46%;
+  background-position: 20% 50%;
+  
 }
 .con1-txt > ul > li:nth-child(2) {
   background-image: url("../imgs/apple.png");
   background-repeat: no-repeat;
   background-size: 17px 17px;
-  background-position: 19% 46%;
+  background-position: 20% 50%;
 }
 .con1-txt > ul > li:nth-child(1) > a {
-  padding-left: 46px;
+  padding-left: 53px;
   padding-right: 32px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 17px;
+  padding-bottom: 18px;
+  
 }
 
 .con1-txt > ul > li:nth-child(1):hover > a {
@@ -330,8 +375,8 @@ display: none;
 .con1-txt > ul > li:nth-child(2) > a {
   padding-left: 52px;
   padding-right: 34px;
-  padding-top: 16px;
-  padding-bottom: 15px;
+  padding-top: 17px;
+  padding-bottom: 18px;
 }
 
 .con1-txt > ul > li:nth-child(2):hover > a {
